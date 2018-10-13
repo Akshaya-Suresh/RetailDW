@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_W8wOsEm4EeiAKLxmPtTtPA" name="usd_price_all" dataPackage="_W8wOsUm4EeiAKLxmPtTtPA" Server="Localhost 127.0.0.1" FilePath="C:/Users/Akshaya Suresh/Documents/DWBI/Team Project 2/SOR files/price_usd_steps_all.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Step1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Step1:w&#xA;Step2:w&#xA;Step3:w&#xA;Step4:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_W8wOsUm4EeiAKLxmPtTtPA" name="default" dataManager="_W8wOsEm4EeiAKLxmPtTtPA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_W8wOskm4EeiAKLxmPtTtPA" id="_JNtEwEm4EeiAKLxmPtTtPA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W8wOs0m4EeiAKLxmPtTtPA" label="ProductLabel" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W8wOtEm4EeiAKLxmPtTtPA" label="CurrencyKey" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W8wOtUm4EeiAKLxmPtTtPA" label="UnitPrice" length="-1" precision="3" talendType="id_Object" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W8wOtkm4EeiAKLxmPtTtPA" label="SCD_EffectiveDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

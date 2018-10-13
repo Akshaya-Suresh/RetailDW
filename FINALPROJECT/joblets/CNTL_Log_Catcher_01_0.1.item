@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend/5.6.1_Client/studio/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+      <routinesParameter id="_xHLIIP5GEeSO4eWae5N6uQ" name="DataOperation"/>
+      <routinesParameter id="_xHROwP5GEeSO4eWae5N6uQ" name="Mathematical"/>
+      <routinesParameter id="_xHXVYP5GEeSO4eWae5N6uQ" name="Numeric"/>
+      <routinesParameter id="_xHXVZP5GEeSO4eWae5N6uQ" name="Relational"/>
+      <routinesParameter id="_xHjioP5GEeSO4eWae5N6uQ" name="SQLike"/>
+      <routinesParameter id="_xHXVaP5GEeSO4eWae5N6uQ" name="StringHandling"/>
+      <routinesParameter id="_xHdcAP5GEeSO4eWae5N6uQ" name="TalendDataGenerator"/>
+      <routinesParameter id="_xHdcBP5GEeSO4eWae5N6uQ" name="TalendDate"/>
+      <routinesParameter id="_xHdcCP5GEeSO4eWae5N6uQ" name="TalendString"/>
+      <routinesParameter id="_wr0nQN7pEeSMtuyeGaLRPQ" name="DateConversion"/>
+      <routinesParameter id="_cZeCMNC5EeWYS7ZXBUpomw" name="DQTechnical"/>
+      <routinesParameter id="_cZU4QNC5EeWYS7ZXBUpomw" name="DataQualityDependencies"/>
+      <routinesParameter id="_cZR08NC5EeWYS7ZXBUpomw" name="DataQuality"/>
+      <routinesParameter id="_cZa-4NC5EeWYS7ZXBUpomw" name="DqStringHandling"/>
+      <routinesParameter id="_cVZagNC5EeWYS7ZXBUpomw" name="MDM"/>
+    </parameters>
+    <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+      <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TWARN" value="false"/>
+      <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogCatcher_1">
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_o6xwcAMSEeWoIaBzCa84YA-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="cntl_logCatcher" name="out_logCatcher">
+        <column comment="" key="false" length="10" name="logCatcher_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <metadata connector="FLOW" name="out_setjava">
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" label="ouit_sendmessage" name="out_sendmail4">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" label="out_GlobalVar" name="out_GlobalVar">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="out_logCatcher" minimized="true">
+          <mapperTableEntries name="logCatcher_sk" type="id_Integer"/>
+          <mapperTableEntries name="moment" expression="logCatcher.moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" expression="logCatcher.pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="logCatcher.root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" expression="logCatcher.father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="logCatcher.project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="logCatcher.job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" expression="logCatcher.context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" expression="logCatcher.priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" expression="logCatcher.type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="logCatcher.origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="logCatcher.message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="logCatcher.code" type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="out_setjava" minimized="true">
+          <mapperTableEntries name="moment" expression="logCatcher.moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" expression="logCatcher.pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="logCatcher.root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" expression="logCatcher.father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="logCatcher.project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="logCatcher.job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" expression="logCatcher.context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" expression="logCatcher.priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" expression="logCatcher.type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="logCatcher.origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="logCatcher.message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="logCatcher.code" type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="out_sendmail4" minimized="true">
+          <mapperTableEntries name="pid" expression="logCatcher.pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="logCatcher.job " type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="logCatcher.message " type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="logCatcher.code " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="out_GlobalVar">
+          <mapperTableEntries name="pid" expression="logCatcher.pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="logCatcher.root_pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="logCatcher.job " type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="logCatcher.project " type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="logCatcher.origin " type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="logCatcher.message  " type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="logCatcher.code " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="logCatcher" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;DevDW01.oscorp.osinternal.net&quot;"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;DW_CTL&quot;"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS" value="xy9Uzal8/03kccklhYWGvg=="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;cntl_logCatcher&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CHECK" name="IDENTITY_INSERT" value="true"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+      <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="logCatcher_sk" show="false"/>
+      <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+      <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+      <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="logCatcher_sk"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="code"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata comment="" connector="FLOW" label="cntl_logCatcher" name="cntl_logCatcher" type="TABLE">
+        <column comment="" key="false" length="10" name="logCatcher_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <metadata connector="REJECT" label="cntl_logCatcher" name="REJECT">
+        <column comment="" key="false" length="10" name="logCatcher_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;log_error&quot;, logCatcher.message);&#xA;globalMap.put(&quot;currentPID&quot;, logCatcher.pid);&#xA;System.out.println(&quot;currentPID:&quot; + globalMap.get(&quot;currentPID&quot;));&#xA;System.out.println(&quot;log_error:&quot; + globalMap.get(&quot;log_error&quot;));"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaRow_1">
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+      <elementParameter field="TABLE" name="VARIABLES">
+        <elementValue elementRef="KEY" value="&quot;vErrorJobPID&quot;"/>
+        <elementValue elementRef="VALUE" value="logCatcher.pid"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorRootJobPID&quot;"/>
+        <elementValue elementRef="VALUE" value="logCatcher.root_pid"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorOrigin&quot;"/>
+        <elementValue elementRef="VALUE" value="logCatcher.origin"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorMessage&quot;"/>
+        <elementValue elementRef="VALUE" value="logCatcher.message "/>
+        <elementValue elementRef="KEY" value="&quot;vErrorCode&quot;"/>
+        <elementValue elementRef="VALUE" value="logCatcher.code"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorJob&quot;"/>
+        <elementValue elementRef="VALUE" value="logCatcher.job"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorProject&quot;"/>
+        <elementValue elementRef="VALUE" value="logCatcher.project"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_GlobalVar" name="tSetGlobalVar_1">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
+      <elementParameter field="TEXT" name="TO" value="&quot;athena.bi.consulting&quot;"/>
+      <elementParameter field="TEXT" name="FROM" value="&quot;athena.dw.consulting@gmail.com&quot;"/>
+      <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+      <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
+      <elementParameter field="TEXT" name="CC" value=""/>
+      <elementParameter field="TEXT" name="BCC" value=""/>
+      <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend ERROR - CNTL_logCatcher joblet. PID: &quot;+globalMap.get(&quot;vErrorJobPID&quot;)"/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Job error message: &quot;+globalMap.get(&quot;log_error&quot;)+&quot; vErrorMessage: &quot;+globalMap.get(&quot;vErrorMessage&quot;)+&quot;Main Job: &quot;+globalMap.get(&quot;vErrorJob&quot;)&#xD;&#xA;"/>
+      <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+      <elementParameter field="TABLE" name="ATTACHMENTS"/>
+      <elementParameter field="TABLE" name="HEADERS"/>
+      <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.gmail.com&quot;"/>
+      <elementParameter field="TEXT" name="SMTP_PORT" value="465"/>
+      <elementParameter field="CHECK" name="SSL" value="true"/>
+      <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+      <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+      <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;athena.dw.consulting@gmail.com&quot;"/>
+      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="xy9Uzal8/03kccklhYWGvg=="/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+      <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="send_LogCatcher_notify"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_GlobalVar" name="tSendMail_2">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMsgBox" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="416">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMsgBox_1" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="TEXT" name="TITLE" value="&quot;DB Error&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="BUTTONS" value="0"/>
+      <elementParameter field="CLOSED_LIST" name="ICON" value="INFORMATION_MESSAGE"/>
+      <elementParameter field="CHECK" name="ANSWER_MASK" value="false" show="false"/>
+      <elementParameter field="MEMO" name="QUESTION_LABEL" value="&quot;Question ?&quot;" show="false"/>
+      <elementParameter field="MEMO" name="MESSAGE" value="&quot;MsgBox - The job failed, the error message is:\n &quot;+globalMap.get(&quot;currentPID&quot;)+&quot; RootPID: &quot;+globalMap.get(&quot;vRootPID&quot;)"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="caseCDC" name="tMsgBox_1">
+        <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="IsDeleted" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="Type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="BillingStreet" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="BillingCity" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="BillingState" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="BillingCountry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="ShippingCity" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="ShippingState" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="Fax" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Website" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="Sic" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="Industry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="AnnualRevenue" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="NumberOfEmployees" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="Ownership" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="TickerSymbol" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="32000" name="Description" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="Rating" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="Site" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="3" name="CurrencyIsoCode" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="OwnerId" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="CreatedById" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="LastModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="LastModifiedById" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="IsPartner" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="Jigsaw" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="JigsawCompanyId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="40" name="AccountSource" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="SicDesc" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="of_Active_Users__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="of_Registered_Users__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="10" name="PMD_Bill_To_Customer_ID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="10" name="PMD_Ship_To_Customer_ID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Named_Account__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Global_Account__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Tax_Exempt__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Class__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="4099" name="Competitors__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Rank__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Region__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Currency__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Tier__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="4099" name="CRM__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Budget_Set_Month__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="MSA_Signed__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Portal_Name__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Misc_Integration__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Client_Competitors__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Corporate_Opt_in__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Hold_Over__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Account_Reassignment__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Account_Assets__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Assets_Euro__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Assets_USD__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Assets_GBP__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="2" name="Country_Code_ISO__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="County_US__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="NAICS_Code__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="130" name="NAICS_Description__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="10" name="Ultimate_Parent_Key_ID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="10" name="Parent_Key_ID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Parent_Name__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Ultimate_Parent_Name__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Sales_Euro__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Sales_GBP__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Sales_USD__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="3" name="State_Abbreviation__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="Stock_Exchange__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="30" name="Ticker__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="UK_SIC_Code__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="18" name="US_SIC_Code__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="UK_SIC_Desc__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="US_SIC_Desc__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="4" name="Year_Founded__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="Bill_To_Alt_Name__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="Site_Alt_Name__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Primary_Competitor_Renewal_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Primary_Competitor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Site_Address_1__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Site_Address_2__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="Site_City__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="30" name="Site_State__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="30" name="Site_Postal_Code__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="80" name="Site_Country__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="FullSiteAddr__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="CustNo__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="18" name="Sales__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Entity_Type__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Ownership_OS__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Delete_Me__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="10" name="HouseList__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="150" name="BAC__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="OS_Data_Last_Integrated_On__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="OS_Data_Last_Integrated_By__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="10" name="Transfer__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="25" name="BAC_Comp__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="WhatTeam__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Legacy_Create_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Renewal_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="US_Strategic_Top_25__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Other_CRM__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="25" name="FormerCustomer__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="18" name="Open_Opportunities__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="ConnectandSell__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Won_Opptys__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="16" name="OneSource__OSKeyID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="18" name="Think_Address_Seq__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="US_Strategic_2nd_Tier__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Think_Id__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="VAT_Registration_Number__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Admin_Credit_Hold_Type__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="NameTooLong__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="Address1TooLong__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="Address2TooLong__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="CityTooLong__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Number_of_Opportunities__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="BB_Express__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="osfsf__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="iSell__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="UK_Strategic_Account__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Admin_Credit_Hold_Comment__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="SMB_Named_Account__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="PO_Required__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="PeopleMapsSF__CompanyMaps__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="15" name="PeopleMapsSF__ConnectionScore_Company__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="PeopleMapsSF__Connection_Strength_br_to_Company__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Licensed_for_Content__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="APAC_Top_50__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Invoice_Portal_Customer__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Intacct_Credit_Hold__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Invoice_Portal_Name__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Acquisition_Type__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Testimonial_for_OneSource__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="4099" name="Testimonial_type_s__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="OS_Can_use_company_s_logo_name__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_will_issue_press_release__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="OS_will_issue_press_release__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_case_study_with_name_and_logo__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_case_study_anonymous__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_video_testimonial_w_logo_name__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_printed_quote_w_company_name__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_printed_quote_anonymous__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_info_stats_w_company_name__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_info_stats_anonymous__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_will_guest_post_on_OS_blog__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_agrees_to_OS_post_on_their_blog__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_to_speak_on_OS_behalf_at_events__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_to_do_OS_live_webinars_podcasts__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_to_do_OS_rec_webinars_podcasts__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_agrees_to_be_sales_reference__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Customer_to_be_reference_for_OS_awards__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Contact__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="CaseSafeID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Testimonial_Sales_Rep__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Launch_Rep__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="SQ_Account_ID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Start_Year__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Pricing_Model__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Price_Per_Seat__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Customer_Type__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Primary_End_Use__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Secondary_End_Use__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="MSA_Terms__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="18" name="Fortune_1000__c" nullable="true" pattern="" precision="9" type="id_BigDecimal" usefulColumn="true"/>
+        <column comment="" key="false" length="16" name="iSell__OSKeyID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Data_Set_Name__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Territory__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1300" name="Parent_MSA_Terms__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Request_New_MSA_Terms__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Terms_Request_Approval__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="Terms_Request_Notes__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="Verified_Date__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="16" name="Highest_US_CorpFam_KeyID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="200" name="scd_start" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="200" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="416">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_2" show="false"/>
+      <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TWARN" value="false"/>
+      <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogCatcher_2">
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="416">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_o6xwcAMSEeWoIaBzCa84YA-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="cntl_logCatcher" name="copyOfout_logCatcher">
+        <column comment="" key="false" length="10" name="logCatcher_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <metadata connector="FLOW" name="copyOfout_setjava">
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" label="ouit_sendmessage" name="copyOfout_sendmail4">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" label="out_GlobalVar" name="copyOfout_GlobalVar">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="copyOfout_logCatcher" minimized="true">
+          <mapperTableEntries name="logCatcher_sk" type="id_Integer"/>
+          <mapperTableEntries name="moment" expression="row1.moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" expression="row1.pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="row1.root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" expression="row1.father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="row1.project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="row1.job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" expression="row1.context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" expression="row1.priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" expression="row1.type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="row1.origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="row1.message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="row1.code" type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="copyOfout_setjava" minimized="true">
+          <mapperTableEntries name="moment" expression="row1.moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" expression="row1.pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="row1.root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" expression="row1.father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="row1.project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="row1.job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" expression="row1.context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" expression="row1.priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" expression="row1.type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="row1.origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="row1.message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="row1.code" type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="copyOfout_sendmail4" minimized="true">
+          <mapperTableEntries name="pid" expression="row1.pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="row1.job " type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="row1.message " type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="row1.code " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="copyOfout_GlobalVar">
+          <mapperTableEntries name="pid" expression="row1.pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="row1.root_pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="row1.job " type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="row1.project " type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="row1.origin " type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="row1.message  " type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="row1.code " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="416">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;DevDW01.oscorp.osinternal.net&quot;"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;DW_CTL&quot;"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS" value="xy9Uzal8/03kccklhYWGvg=="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;cntl_logCatcher&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CHECK" name="IDENTITY_INSERT" value="true"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+      <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="logCatcher_sk" show="false"/>
+      <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+      <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+      <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="logCatcher_sk"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="code"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata comment="" connector="FLOW" label="cntl_logCatcher" name="cntl_logCatcher" type="TABLE">
+        <column comment="" key="false" length="10" name="logCatcher_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <metadata connector="REJECT" label="cntl_logCatcher" name="REJECT">
+        <column comment="" key="false" length="10" name="logCatcher_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="576">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+      <elementParameter field="TABLE" name="VARIABLES">
+        <elementValue elementRef="KEY" value="&quot;vErrorJobPID&quot;"/>
+        <elementValue elementRef="VALUE" value="row1.pid"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorRootJobPID&quot;"/>
+        <elementValue elementRef="VALUE" value="row1.root_pid"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorOrigin&quot;"/>
+        <elementValue elementRef="VALUE" value="row1.origin"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorMessage&quot;"/>
+        <elementValue elementRef="VALUE" value="row1.message "/>
+        <elementValue elementRef="KEY" value="&quot;vErrorCode&quot;"/>
+        <elementValue elementRef="VALUE" value="row1.code"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorJob&quot;"/>
+        <elementValue elementRef="VALUE" value="row1.job"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorProject&quot;"/>
+        <elementValue elementRef="VALUE" value="row1.project"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="set_GlobalVar_Log"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_GlobalVar" name="tSetGlobalVar_2">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="576">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+      <elementParameter field="TEXT" name="TO" value="&quot;athena.bi.consulting&quot;"/>
+      <elementParameter field="TEXT" name="FROM" value="&quot;athena.dw.consulting@gmail.com&quot;"/>
+      <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+      <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
+      <elementParameter field="TEXT" name="CC" value=""/>
+      <elementParameter field="TEXT" name="BCC" value=""/>
+      <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend ERROR - CNTL_logCatcher joblet. PID: &quot;+((String)globalMap.get(&quot;vErrorJobPID&quot;))+&quot; Job Name: &quot;+((String)globalMap.get(&quot;vErrorJob&quot;))"/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error job: &quot;+((String)globalMap.get(&quot;vErrorJob&quot;))+&quot;\n&quot;+&quot;Error message: &quot;+((String)globalMap.get(&quot;vErrorMessage&quot;))+&quot;\n&quot;+&quot;\nError Job PID: &quot;+((String)globalMap.get(&quot;vErrorJobPID&quot;))+&quot;\n&quot;+&quot;\nError Root Job PID: &quot;+((String)context.getProperty(&quot;vRootPID&quot;))+&quot;\n&quot;+&quot;Error Root_Name: &quot;+((String)context.getProperty(&quot;vRootName&quot;))+&quot;\n&quot;+&quot;\nError Project: &quot;+((String)globalMap.get(&quot;vErrorProject&quot;))"/>
+      <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+      <elementParameter field="TABLE" name="ATTACHMENTS"/>
+      <elementParameter field="TABLE" name="HEADERS"/>
+      <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.gmail.com&quot;"/>
+      <elementParameter field="TEXT" name="SMTP_PORT" value="465"/>
+      <elementParameter field="CHECK" name="SSL" value="true"/>
+      <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+      <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+      <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;athena.dw.consulting@gmail.com&quot;"/>
+      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="xy9Uzal8/03kccklhYWGvg=="/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+      <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="send_LogCatcher_notify"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_GlobalVar" name="tSendMail_1">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="logCatcher" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMap_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="logCatcher" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMsgBox_1">
+      <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="out_logCatcher" lineStyle="0" metaname="out_logCatcher" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tMSSqlOutput_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="logCatcher_sk"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_logCatcher" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="out_setjava" lineStyle="0" metaname="out_setjava" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tJavaRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_setjava" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="out_GlobalVar" lineStyle="0" metaname="out_GlobalVar" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tSetGlobalVar_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_GlobalVar" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="email_logCatcher" lineStyle="0" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tSendMail_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="email_logCatcher" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogCatcher_2" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_2" target="tMap_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="copyOfout_logCatcher" lineStyle="0" metaname="copyOfout_logCatcher" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tMSSqlOutput_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="logCatcher_sk"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout_logCatcher" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="copyOfout_GlobalVar" lineStyle="0" metaname="copyOfout_GlobalVar" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tSetGlobalVar_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout_GlobalVar" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSetGlobalVar_2" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_2" target="tSendMail_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LogCatcher &amp; send email norification"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;128"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMsgBox_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_2" show="false"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LogCatcher &amp; send email norification - Child Job"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;128"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+    </subjob>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray innerContent="89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7AF40000032C49444154789CC5975B4853711CC7BF1114410F3D48F510D45BD09B19E483B76A1084D9249D9897D49A9754EAC9A07A28A3B7E84AE55113350DCD4B8E5444F38268B99CBD88D10531422B2B3412F421EADBEF781CD8B6B3EDCC5983CF7E3B3BDB7E9FF3FB7FCF390C24F13F597C0A0F0F7FAFE27CF35F6E07FC0311FBF6CCE554623E5B01A34CA18C34EDFE955C81F280048C905D8FED795598CFAF06CF7781975E8045FD604E23682D0553CAF0D6F0121821AF1AB367EAC13BAFC1AA0F60D9047875143CFB0CCC7A02669483490A4602CA8080E5B81D7D1D2CB915E0CD5760E334D839073EFE0A968CCB2446C0DCA760429D4C4296254E41845E53DD0CF814A8414F619DD6D0F60D1CFC09B6CE6853B8FC123CD50DC637C91444E0A8826623021E71FDA2B5121F0B44E0864CE0C124D8F405AC9D026FBD012F4816AC9DE0E1063055041215F41A5902BF0432ABD09B5B035E7480D7C6C0DBD2F8BAC814CBF84F4B10532403A65A30DDC70402CEC0B14A5CB1DE07F365D44512BA737609DF73B0B00F3CDE0EC63E0263CAB50C1C519018F40CC8634D6639E633E4144C6F93D477688D936CE0213933A224A0C9D23C45C1ACB7A30E3803F2D81893BDA5E6440998269330CB721C7C28475D051E28D5469FA6602156C136A3A7A15F02533F2698DA14C6B08490FD96BB78671591938A469682DF6605E37B15348429D810F4EB80B3B95A97A61122AC8F2B8165F97A4BF362A147D81AB40C389B378EDDA3AF2392C6EB8422A152D8B1E20C1869EE22922B3884CD016720D0E64B026B851C41F12B03A12633D58F7AC39FC60E07A32593D443F66FF2980155A05D6EA47D9231FB24393A4D8ECF909FE6C8EF0BC605A47A44DD171919FDD92D036A83D512181EFE1B75BF5B06822560B76B02523934E4194F02869740BD2C7B12181CD404A4BA3130A061D95944E9D962580072CBC5B0E0F08E2AD0DFAF8F9BC0E20BFF9620DAD712F4F4681390AA8BDB120453A0AB4B1390AACB4A32E053A0A3431390AA4BC019F047A0AD4D1390BA486BAB3BAB9A019B4D1390AACBAA66A0B9591390AA8B6E069CD7FC5DF1058BB86E3B05BCFDD56A6860B429D44C15E7F5DF75DB63065C7EB05BC5CBF64AFF9CB6B865E07FF1073F036B3DCBCB274D0000000049454E44AE426082"/>
+</xmi:XMI>

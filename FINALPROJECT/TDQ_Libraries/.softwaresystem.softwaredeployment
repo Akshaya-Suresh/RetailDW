@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010">
+  <softwaredeployment:TdSoftwareSystem xmi:id="_FluRkEW_EeilK7RI5YjGVg" name="Microsoft SQL Server" subtype="Microsoft SQL Server" version="14.00.1000"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_c-Dp8EW_EeilK7RI5YjGVg" name="MySQL" subtype="MySQL" version="5.5.59-log"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_ZtrwgEePEeiVv7eSGOA5nw" name="PostgreSQL" subtype="PostgreSQL" version="10.1"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_B6ug8Ef4EeiYlLtzkGosLA" name="Oracle" subtype="Oracle" version="Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production"/>
+</xmi:XMI>

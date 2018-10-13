@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="__oW4MEkUEeidLPmscB8PEA" name="cross_reference_customers" dataPackage="__oW4MUkUEeidLPmscB8PEA" Server="Localhost 127.0.0.1" FilePath="C:/Users/Akshaya Suresh/Documents/DWBI/Team Project 2/SOR files/cross_reference_Customers.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="__oW4MUkUEeidLPmscB8PEA" name="default" dataManager="__oW4MEkUEeidLPmscB8PEA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__oW4MkkUEeidLPmscB8PEA" id="_1OdsMEkUEeidLPmscB8PEA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__oW4M0kUEeidLPmscB8PEA" label="CustomerKey" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__oW4NEkUEeidLPmscB8PEA" label="CustomerLabel" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__oW4NUkUEeidLPmscB8PEA" label="CustomerType" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
