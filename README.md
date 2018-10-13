@@ -16,13 +16,15 @@ DATA INTEGRATION
 ```
 __FINALPROJECT__
 
-|--- process - For the talend jobs (Populating data into the Data Warehouse)
-|--- joblets - Various jobs that furnishes details about the source DB 
-|--- README.me 
+|--- process - For the talend jobs (Populating data into the Data Warehouse) <br>
+|--- joblets - Various jobs that furnishes details about the source DB <br>
+|--- README.me <br>
 
 ```
 BUSINESS INTELLIGENCE
 ```
+         https://public.tableau.com/profile/akshusuresh
+
  - BI reports built on tableau on top of the DataWarehouse
  
- https://public.tableau.com/profile/akshusuresh
+
