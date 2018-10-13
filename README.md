@@ -1,20 +1,20 @@
 # RetailDW
 Datawarehouse for Retail Business - BI built on top
 ```
-Step 01: Profiled the Source data across the Databases <br>
+Step 01: Profiled the source data across the Databases 
 
-Step 02: Created a Dimensional Model from the E-R model <br>
+Step 02: Created a Dimensional Model from the E-R model 
 
-Step 03: Built ETL Mapping workflow in talend <br>
+Step 03: Built ETL Mapping workflow in talend 
 
 Step 04: Integrated the input data across various sources into the destination Retail_DW <br>
 ```
 <br>
 
 ```
-* DATA INTEGRATION *
+DATA INTEGRATION 
 ```
-<h2> Illustrations <h2> <br>
+<h2> Illustrations </h2> 
 
 -- A workflow of the Complex ETL mappings <br>
 
