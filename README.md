@@ -12,9 +12,9 @@ Step 04: Integrated the input data across various sources into the destination R
 <br>
 
 ```
-** DATA INTEGRATION **
+* DATA INTEGRATION *
 ```
-<h2> **Illustrations** <h2> <br>
+<h2> Illustrations <h2> <br>
 
 -- A workflow of the Complex ETL mappings <br>
 
