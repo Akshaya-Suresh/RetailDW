@@ -2,24 +2,24 @@
 
 -- A workflow of the Complex ETL mappings <br>
 
-![alt tag](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/completeworkflow.jpg "CompleteWorkFLow")
+![image](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/completeworkflow.jpg)
 
 -- Parallelizing loading of Basic Dimensions <br>
 
-![alt tag](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/basicdim1.jpg "Basic Dim")
+![image](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/basicdim1.jpg )
 
 -- A sample tmap for mapping the source to the destination <br>
 
-![alt tag](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/tmap.jpg "Sample Tmap")
+![image](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/tmap.jpg )
 
 -- Complex integration flow across multiple source DBs <br>
 
-![alt tag](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/complexmapping.jpg "Complex map")
+![image](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/complexmapping.jpg )
 
 -- FactTable used to store both the Fact and Rejects <br>
 
-![alt tag](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/factstoresales.jpg "Fact Reject")
+![image](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/factstoresales.jpg )
 
 -- Job Stats used to store various details such as JobID, SORID etc
 
-![alt tag](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/job_stats.jpg "JobStats")
+![image](https://github.com/Akshaya-Suresh/RetailDW/tree/master/FINALPROJECT/screenshots/job_stats.jpg )
